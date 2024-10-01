@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Suwannaphum:wght@100;300;400;700;900&display=swap");
+
+/*
+font-family: "Suwannaphum", serif;
+font-family: "Inter", sans-serif;
+*/
+
+body {
+  margin: 10px;
+  background-color: #1a1a1a;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 67px;
+  border: 1px solid #f3efe0;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+
+.right-side {
+  float: right;
+}
+
+.button1,
+.button2,
+.button3 {
+  flex-grow: 0;
+  border: #f3efe0 1px solid;
+  border-radius: 67px;
+}
+
+.button1,
+.button2,
+.button3,
+h2 {
+  margin: 0;
+  color: #f3efe0;
+  font-weight: 300;
+  font-size: 1.3vw;
+}
+
+.button1 {
+  padding: 30px 7.8vw;
+  background: #363636;
+  cursor: pointer;
+}
+
+
+
+.button2 {
+  padding: 30px 10.4vw;
+  background: #846350;
+  cursor: pointer;
+}
+
+.button3 {
+  padding: 30px 6.8vw;
+  background: #1a1a1a;
+  cursor: pointer;
+}
+
+.parent {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.div1 {
+  background-color: #f3efe0;
+  border-radius: 31px;
+  text-align: center;
+}
+
+.div2 {
+  background-color: #8e8868;
+  border-radius: 31px;
+  text-align: center;
+}
+
+.div3 {
+  background-color: #966c54;
+  border-radius: 31px;
+  text-align: center;
+}
+
+.div4 {
+  background-color: #b5a38b;
+  border-radius: 31px;
+  text-align: center;
+}
+
+
+.div1-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  border: #1a1a1a 1px solid;
+  border-radius: 27px;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+  padding: 3px 10px;
+  margin-left: 20px;
+  width: max-content;
+  font-size: 1.6vw;
+}
+
+.desc {
+  font-family: "Suwannaphum", serif;
+  color: #332616;
+  text-align: left;
+  line-height: 1.1;
+  padding-left: 25px;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.center-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.div1-image {
+  width: 95%;
+  min-height: 500px;
+  background-image: url(./assets/nyitokep.jpg);
+  border-radius: 27px;
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center;
+}
+
+.more-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 9vh;
+  border-top: 1px solid #1a1a1a;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: auto; 
+  cursor: pointer;
+}
+
+.more-option:hover {
+  background: #1a1a1a44;
+  transition: all 0.25s ease-in;
+}
+
+.more-option h2 {
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25vw;
+}
+
+.more-option img {
+  width: 3.3vw;
+  height: 1.2vw;
+}
+
+.div2-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.div2-sideded {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.div2-left-side {
+  width: 50%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.div2-right-side {
+  padding-right: 20px;
+}
+
+.div2-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+
+.bigdesc {
+  font-family: "Suwannaphum", serif;
+  color: #332616;
+  font-size: 3.3vw;
+  margin: 0;
+  text-align: left;
+  width: 36.5vw;
+  padding: 0;
+}
+.longdesc{
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #1a1a1a;
+  font-size: 1.5vw;
+  text-align: left;
+  margin: 0;
+  width: 36.5vw;
+}
+
+.longdesctwo {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #1a1a1a;
+  font-size: 1.3vw;
+  text-align: left;
+  margin: 0;
+  width: 36.5vw;
+}
+
+/* Kisebb kijelzők esetén két oszlopos elrendezés */
+@media (max-width: 1450px) {
+  .div1 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .div2 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .div3 {
+    grid-area: 3 / 1 /3 / 4;
+  }
+  .div4 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .div1-image {
+    min-height: 350px;
+  }
+
+  .desc {
+    font-size: 2.5vw;
+  }
+
+  .bigdesc {
+    font-size: 2.5vw;
+    max-width: 200px;
+    line-height: 1.1;
+    min-height: 80px;
+  }
+
+  .longdesc {
+    max-width: 240px;
+    font-size: 1.1vw;
+  }
+
+  .div2-img {
+    width: 70%;
+    height: 70%;
+  }
+  .more-option {
+    height: 5vw;
+  }
+  .div2-right-side {
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr); /* Két oszlop */
+    grid-template-rows: repeat(3, auto); /* Több sor */
+  }
+}
+
+/* Még kisebb kijelzők esetén egy oszlopos elrendezés */
+@media (max-width: 770px) {
+  .parent {
+    grid-template-columns: 1fr; /* Egy oszlop, egymás alatt */
+    grid-template-rows: auto; /* Automatikus sorok */
+  }
+
+  /* Igazítjuk a diveket is, ha szükséges */
+  .div1, .div2, .div3, .div4 {
+    grid-column: auto; /* Az oszlopokat automatikusan osztja ki */
+    grid-row: auto; /* Az elemek egymás alá kerülnek */
+  }
+
+  .desc {
+    font-size: 4vw;
+  }
+}
