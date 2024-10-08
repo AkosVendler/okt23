@@ -235,6 +235,7 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 22px;
+  object-fit: cover;
 }
 
 .bigdesc {
@@ -267,6 +268,158 @@ h2 {
   margin: 0;
   width: 36.5vw;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  
+/*  .div1 { }
+  .div2 { grid-area: 3 / 1 / 5 / 3; }
+  .div3 { grid-area: 1 / 3 / 3 / 6; }
+  .div4 { grid-area: 3 / 3 / 5 / 6; }
+*/
+.card1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #f3efe0;
+  padding: 20px;
+  border-radius: 32px;
+}
+
+.card2 {
+  grid-area: 3 / 1 / 5 / 3;
+  background-color: #f3efe0;
+  padding: 20px;
+  border-radius: 32px;
+}
+
+.card3 {
+  grid-area: 1 / 3 / 3 / 6;
+  background-color: #f3efe0;
+  padding: 20px;
+  border-radius: 32px;
+}
+
+.card4 {
+  grid-area: 3 / 3 / 5 / 6;
+  background-color: #f3efe0;
+  padding: 20px;
+  border-radius: 32px;
+}
+
+.card-content {
+  display: flex;
+  gap: 20px;
+}
+
+.card-desc {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #1a1a1a;
+  font-size: 1vw;
+  text-align: left;
+  margin: 0;
+  width: 36.5vw;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.left-wrapper {
+  width: 60%;
+  padding: 100px;
+}
+
+.right-wrapper {
+  width: 40%;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.left-wrapper2 {
+  width: 40%;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.right-wrapper2 {
+  width: 60%;
+  padding: 100px;
+}
+
+.wrapper3 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.left-wrapper3 {
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 50px;
+}
+
+.right-wrapper3 {
+  display: flex;
+  align-items: flex-start;
+  width: 60%;
+  padding: 100px;
+}
+
+.kitorimg {
+  max-width: 500px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carimg {
+  max-width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.wrapper-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #f3efe0;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.elozmeny-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #b5a38b;
+  font-weight: 500;
+  padding-top: 20px;
+
+}
+
+
+
+
 
 /* Kisebb kijelzők esetén két oszlopos elrendezés */
 @media (max-width: 1450px) {
